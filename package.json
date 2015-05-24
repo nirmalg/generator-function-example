@@ -1,0 +1,33 @@
+{
+  "name": "generator-function-example",
+  "version": "1.0.0",
+  "description": "making async code practically synchronous ",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nirmalg/generator-function-example.git"
+  },
+  "keywords": [
+    "generator",
+    "function",
+    "promise",
+    "callback",
+    "nodejs",
+    "synchronous",
+    "q",
+    "bluebird"
+  ],
+  "author": "Nirmal Gupta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nirmalg/generator-function-example/issues"
+  },
+  "homepage": "https://github.com/nirmalg/generator-function-example",
+  "dependencies": {
+    "bluebird": "^2.9.25",
+    "galaxy": "^0.1.12",
+    "q": "^1.4.1"
+  }
+}

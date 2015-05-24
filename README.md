@@ -1,4 +1,4 @@
-# generator-functions-example
+# generator-function-example
 making async code practically synchronous 
 
 - for simple callback using galaxy   

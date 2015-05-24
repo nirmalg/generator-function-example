@@ -32,7 +32,7 @@ function* f2(msg) {
 }
 
 /**
- * running generator function using bluebird,s coroutine.
+ * running generator function using bluebird's coroutine.
  * Please note, if you want to return anything from this function, use promise or callback.
  */
 var test = Promise.coroutine(function* (msg) {

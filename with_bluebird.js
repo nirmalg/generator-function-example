@@ -2,8 +2,6 @@ var Promise = require("bluebird");
 
 /**
  * typical callback
- * @param msg
- * @param cb
  */
 function cb1(msg, cb) {
   setTimeout(function () {
@@ -18,8 +16,6 @@ var cbp = Promise.promisify(cb1);
 
 /**
  * first generator function using promise function
- * @param msg
- * @returns {*}
  */
 function* f1(msg) {
   if (msg != null)
@@ -30,8 +26,6 @@ function* f1(msg) {
 
 /**
  * generator function using another generator function
- * @param msg
- * @returns {*}
  */
 function* f2(msg) {
   return yield* f1(msg + '-f2')

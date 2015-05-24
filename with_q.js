@@ -2,8 +2,6 @@ var q = require('q');
 
 /**
  * promise function using q
- * @param msg
- * @returns {*}
  */
 function p1(msg) {
   var deferred = q.defer();
@@ -15,8 +13,6 @@ function p1(msg) {
 
 /**
  * first generator function using promise function
- * @param msg
- * @returns {*}
  */
 function* f1(msg) {
   if (msg != null)
@@ -27,8 +23,6 @@ function* f1(msg) {
 
 /**
  * generator function using another generator function
- * @param msg
- * @returns {*}
  */
 function* f2(msg) {
   return yield* f1(msg + '-f2')

@@ -3,8 +3,6 @@ var galaxy = require('galaxy');
 
 /**
  * typical callback
- * @param msg
- * @param cb
  */
 function cb1(msg, cb){
   setTimeout(function () {
@@ -19,8 +17,6 @@ var cbs = galaxy.star(cb1);
 
 /**
  * this generator function uses typical starred method cbs.
- * @param msg
- * @returns {*}
  */
 function* f1(msg) {
   if (msg != null)
@@ -31,8 +27,6 @@ function* f1(msg) {
 
 /**
  * generator function using another generator function.
- * @param msg
- * @returns {*}
  */
 function* f2(msg) {
   return yield* f1(msg + '-f2')

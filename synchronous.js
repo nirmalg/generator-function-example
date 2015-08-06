@@ -15,10 +15,11 @@ var callOnlyOnce = function (key) {
 
 
 var synchronous = bluebird.coroutine(function* (key) {
-  console.log('synchronous', key);
   if (obj[key]) {
+    console.log('synchronous promise present', key);
     return (yield obj[key])
   } else {
+    console.log('synchronous promise craete', key);
     var value = callOnlyOnce(key);
     obj[key]  = value;
     return (yield value);

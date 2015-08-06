@@ -25,7 +25,8 @@ function* calc(input) {
 }
 
 var test = bluebird.coroutine(function* () {
-  var result1  = yield* runParallel(calc.bind(undefined, 1), calc.bind(undefined, 2));
+  var result1  = yield [calP(1), calP(2)];
+  //var result1  = yield* runParallel(calc.bind(undefined,1), calc.bind(undefined,2));
   util.log(result1);
 });
 
